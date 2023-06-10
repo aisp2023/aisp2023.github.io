@@ -207,6 +207,7 @@ body {
   background-size: cover;
   transition: background 2s linear;
   -webkit-backface-visibility: hidden;
+  background-position: 50% 40%;
   /* animation: slideLeft 5s linear infinite; */
   /* height: 100vh; */
 }
