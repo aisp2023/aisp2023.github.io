@@ -206,6 +206,7 @@ body {
   /* background: url("../img/duotone1.png") 50% 40% no-repeat; */
   background-size: cover;
   transition: background 2s linear;
+  -webkit-backface-visibility: hidden;
   /* animation: slideLeft 5s linear infinite; */
   /* height: 100vh; */
 }
