@@ -26,6 +26,7 @@
 
   <!-- Script -->
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="https://code.createjs.com/1.0.0/preloadjs.min.js"></script>
   <script src="index.js" defer></script>
 
 
@@ -132,13 +133,27 @@
         //Array of images which you want to show: Use path you want.
         var images = new Array('img/bod_1528419810491.png', 'img/bod_1528419792937.png', 'img/img1.png', 'img/img2.png');
         var nextimage = 0;
-        doSlideshow();
+
+        var queue = new createjs.LoadQueue();
+        for (var i = 0; i < images.length; i++) {
+          queue.loadFile(images[i]);
+        }
+        // queue.on('complete', function () {
+        //   var imageUrl = queue.getResult('image.jpg').src;
+
+        //   // jQuery를 사용하여 이미지를 .image-container의 background-image로 설정
+        //   $('.image-container').css('background-image', 'url(' + imageUrl + ')');
+        // });
+
+        // doSlideshow();
+        queue.on('complete', doSlideshow);
 
         function doSlideshow() {
           if (nextimage >= images.length) { nextimage = 0; }
+          var imageUrl = queue.getItem(images[nextimage++]).src;
           $('.hero--img')
             // .css('background', 'url("' + images[nextimage++] + '") 50% 40% no-repeat')
-            .css('background-image', 'url("' + images[nextimage++] + '")')
+            .css('background-image', 'url("' + imageUrl + '")')
             // .css('background', 'url("' + images[nextimage++] + '") no-repeat 50% 40% fixed')
             .show(0, function () {
               setTimeout(doSlideshow, 5000);
