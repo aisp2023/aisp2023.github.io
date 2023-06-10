@@ -41,7 +41,7 @@
       </button>
       <ul class="nav__mobile">
         <li class="nav__mobile-list">
-          <a class="nav__mobile-links" href="./pages/about.html">위원회</a>
+          <a class="nav__mobile-links" href="./pages/organizer.html">위원회</a>
         </li>
         <li class="nav__mobile-list">
           <a class="nav__mobile-links" href="./pages/submit.html">논문제출</a>
@@ -111,27 +111,25 @@
     <!-- Hero -->
 
     <section class="hero">
-      <div class="hero_l">
-        <div class="hero--img">
-          <div class="hero__container">
-            <div class="hero__container-img"></div>
-            <hgroup class="hero__hgroup">
-              <h3 class="hero__h4">대한전자공학회</h3>
-              <h1 class="hero__h1">
-                <strong>제 1회<br />
-                  인공지능신호처리<br />
-                  학술대회</strong>
-              </h1>
-            </hgroup>
-            <p class="hero__date"><strong>2023.9.21 (목) ~ 22 (금)</strong></p>
-            <p class="hero__location">계명대학교 성서캠퍼스 바우어관 2xx호, 대구</p>
-          </div>
-
+      <div class="hero--img">
+        <div class="hero__container">
+          <div class="hero__container-img"></div>
+          <hgroup class="hero__hgroup">
+            <h3 class="hero__h4">대한전자공학회</h3>
+            <h1 class="hero__h1">
+              <strong>제 1회<br />
+                인공지능신호처리<br />
+                학술대회</strong>
+            </h1>
+          </hgroup>
+          <p class="hero__date"><strong>2023.9.21 (목) ~ 22 (금)</strong></p>
+          <p class="hero__location">계명대학교 성서캠퍼스 바우어관 2xx호, 대구</p>
         </div>
+
       </div>
       <script>
         //Array of images which you want to show: Use path you want.
-        var images = new Array('img/bod_1528419792937.png', 'img/bod_1528419810491.png', 'img/img1.png', 'img/img2.png');
+        var images = new Array('img/bod_1528419810491.png', 'img/bod_1528419792937.png', 'img/img1.png', 'img/img2.png');
         var nextimage = 0;
         doSlideshow();
 
@@ -139,6 +137,7 @@
           if (nextimage >= images.length) { nextimage = 0; }
           $('.hero--img')
             .css('background', 'url("' + images[nextimage++] + '") 50% 40% no-repeat')
+            // .css('background', 'url("' + images[nextimage++] + '") no-repeat 50% 40% fixed')
             .show(0, function () {
               setTimeout(doSlideshow, 5000);
             });
