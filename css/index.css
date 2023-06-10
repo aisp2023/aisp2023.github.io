@@ -18,6 +18,13 @@
 
 body {
   font-family: "lato", sans-serif;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-font-smoothing: antialiased;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1;
+  -webkit-backface-visibility: none;
 }
 
 /*
@@ -205,11 +212,19 @@ body {
   padding: 10rem 0.25rem;
   /* background: url("../img/duotone1.png") 50% 40% no-repeat; */
   background-size: cover;
-  transition: background 2s linear;
-  -webkit-backface-visibility: hidden;
+  transition: opacity 5s;
   background-position: 50% 40%;
   /* animation: slideLeft 5s linear infinite; */
   /* height: 100vh; */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes slideLeft {
@@ -296,11 +311,14 @@ body {
   }
 
   .hero__h5 {
+    display: flex;
     margin-top: 0;
     margin-bottom: 0;
     color: #ee523c;
     font-size: 1rem;
+    /* font-size: 1vh; */
     font-weight: normal;
+    width: 7rem;
   }
 
   .hero__h1 {

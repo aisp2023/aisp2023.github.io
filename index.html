@@ -152,10 +152,9 @@
           if (nextimage >= images.length) { nextimage = 0; }
           var imageUrl = queue.getItem(images[nextimage++]).src;
           $('.hero--img')
-            // .css('background', 'url("' + images[nextimage++] + '") 50% 40% no-repeat')
+            // .stop()
             .css('background-image', 'url("' + imageUrl + '")')
-            // .css('background', 'url("' + images[nextimage++] + '") no-repeat 50% 40% fixed')
-            .show(0, function () {
+            .fadeIn(400, function () {
               setTimeout(doSlideshow, 5000);
             });
         }
