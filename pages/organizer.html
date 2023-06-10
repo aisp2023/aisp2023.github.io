@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="" />
+  <meta name="description" content="" />
+
+  <!-- Links -->
+  <link href="../css/organizer.css" rel="stylesheet" />
+  <link href="../css/sanitize.css" rel="stylesheet" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Tittle -->
+  <title>Capstone Project</title>
+
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/2f238780d4.js" crossorigin="anonymous"></script>
+
+  <!-- Script -->
+  <script src="../index.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <!-- Navigation mobile -->
+
+    <nav class="nav__mobile-menu">
+      <button class="nav__btn-mobile" type="button">
+        <i class="nav__icon-close fas fa-times"></i>
+      </button>
+      <ul class="nav__mobile">
+        <li class="nav__mobile-list">
+          <a class="nav__mobile-links" href="./pages/about.html">위원회</a>
+        </li>
+        <li class="nav__mobile-list">
+          <a class="nav__mobile-links" href="./pages/submit.html">논문제출</a>
+        </li>
+        <li class="nav__mobile-list">
+          <a class="nav__mobile-links" href="./pages/sp.html">특별프로그램</a>
+        </li>
+        <li class="nav__mobile-list">
+          <a class="nav__mobile-links" href="./pages/program.html">프로그램</a>
+        </li>
+        <li class="nav__mobile-list">
+          <a class="nav__mobile-links" href="./pages/reg.html">등록안내</a>
+        </li>
+        <li class="nav__mobile-list">
+          <a class="nav__mobile-links" href="./pages/venue.html">오시는 길</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Navigation desktop top -->
+
+    <nav class="nav-top">
+      <ul class="nav-top__ul">
+        <!-- <li>
+          <a class="nav-top__a" href=""><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li>
+          <a class="nav-top__a" href=""><i class="fab fa-twitter"></i></a>
+        </li>
+        <li><a class="nav-top__a" href="">English</a></li>
+        <li><a class="nav-top__a" href="">My Page</a></li>
+        <li><a class="nav-top__a" href="">Logout</a></li> -->
+      </ul>
+    </nav>
+
+    <!-- Navigation desktop bottom -->
+
+    <nav class="nav">
+      <div class="nav__container">
+        <!-- <a href="../index.html"><img class="nav__logo" src="../img/fintech-logo-1.svg" alt="FinTech logo" /></a> -->
+        <a href="../index.html">
+          <div>
+            <h3 class="hero__h5"><strong>인공지능신호처리<br>학술대회</strong>
+            </h3>
+          </div>
+        </a>
+        <div></div>
+        <ul class="nav__ul">
+          <li><a class="nav__a" href="./organizer.html">위원회</a></li>
+          <li><a class="nav__a" href="./submit.html">논문제출</a></li>
+          <li><a class="nav__a" href="./sp.html">특별프로그램</a></li>
+          <li><a class="nav__a" href="./program.html">프로그램</a></li>
+          <li><a class="nav__a" href="./reg.html">등록안내</a></li>
+          <li><a class="nav__a" href="./venue.html">오시는 길</a></li>
+          <!-- <li>
+            <button class="nav__btn" type="button">Campaign</button>
+          </li> -->
+        </ul>
+      </div>
+      <button class="nav__btn-icon" type="button">
+        <i class="nav__icon--open fas fa-bars"></i>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+
+    <section class="hero-about hero-about--img">
+      <div class="hero-about__container">
+        <div class="hero-about__container-img"></div>
+        <hgroup class="hero-about__hgroup">
+          <!-- <h3 class="hero-about__h3">"Hello! FinTech world"</h3> -->
+          <h1 class="hero__h1">
+            <strong>위원회</strong>
+          </h1>
+        </hgroup>
+        <!-- <p class="hero_about-description">
+          The FinTech Summit brings together the influential, disruptive and
+          innovative technology companies that are redefining financial
+          services across all areas of fintech. We’ll also be covering the
+          major trends in the industry, especially FinTech-Bank Collaboration,
+          the power of Open Banking, DeFi, the arrival of Crypto into the
+          Mainstream, as well as Embedded Finance.
+        </p>
+        <p class="hero-about__info">
+          Please contact us per Email for any further question about FinTech
+          Global Summit 2022
+        </p>
+        <p class="hero-about__email">
+          fintechglobal@us.com<span class="hero__fa-chevron-right fas fa-chevron-right"></span>
+        </p> -->
+      </div>
+    </section>
+
+    <!-- Logo Info -->
+
+    <section class="speakers">
+      <div class="speakers__container">
+        <!-- <h2 class="speakers__h2">Feature Speakers</h2>
+        <span class="speakers__decoration"></span> -->
+        <ul class="speakers__list">
+
+          <li class="speakers__card">
+            <div class="speakers__img-container">
+              <!-- <span class="speakers__decoration-img"></span> -->
+              <img class="speakers__img" src="../img/people/bcko.png" alt="Speakers image">
+            </div>
+            <div class="speakers__info">
+              <hgroup>
+                <h3 class="speakers__name">고병철</h3>
+                <h4 class="speakers__role">계명대학교</h4>
+              </hgroup>
+              <!-- <span class="speakers__decoration speakers__decoration--small"></span>
+              <p class="speakers__description">${speakers[i].description}</p> -->
+            </div>
+          </li>
+
+
+          <li class="speakers__card">
+            <div class="speakers__img-container">
+              <!-- <span class="speakers__decoration-img"></span> -->
+              <img class="speakers__img" src="../img/people/bcsong.png" alt="Speakers image">
+            </div>
+            <div class="speakers__info">
+              <hgroup>
+                <h3 class="speakers__name">송병철</h3>
+                <h4 class="speakers__role">인하대학교</h4>
+              </hgroup>
+            </div>
+          </li>
+
+          <li class="speakers__card">
+            <div class="speakers__img-container">
+              <!-- <span class="speakers__decoration-img"></span> -->
+              <img class="speakers__img" src="../img/people/dbm.jpeg" alt="Speakers image">
+            </div>
+            <div class="speakers__info">
+              <hgroup>
+                <h3 class="speakers__name">민동보</h3>
+                <h4 class="speakers__role">이화여자대학교</h4>
+              </hgroup>
+            </div>
+          </li>
+
+          <li class="speakers__card">
+            <div class="speakers__img-container">
+              <!-- <span class="speakers__decoration-img"></span> -->
+              <img class="speakers__img" src="../img/people/gsc.png" alt="Speakers image">
+            </div>
+            <div class="speakers__info">
+              <hgroup>
+                <h3 class="speakers__name">최강선</h3>
+                <h4 class="speakers__role">한국기술교육대학교</h4>
+              </hgroup>
+            </div>
+          </li>
+
+          <li class="speakers__card">
+            <div class="speakers__img-container">
+              <!-- <span class="speakers__decoration-img"></span> -->
+              <img class="speakers__img" src="../img/people/gjj.jpeg" alt="Speakers image">
+            </div>
+            <div class="speakers__info">
+              <hgroup>
+                <h3 class="speakers__name">장길진</h3>
+                <h4 class="speakers__role">경북대학교</h4>
+              </hgroup>
+            </div>
+          </li>
+
+
+          <li class="speakers__card">
+            <div class="speakers__img-container">
+              <!-- <span class="speakers__decoration-img"></span> -->
+              <img class="speakers__img" src="../img/people/wjk.jpeg" alt="Speakers image">
+            </div>
+            <div class="speakers__info">
+              <hgroup>
+                <h3 class="speakers__name">김원준</h3>
+                <h4 class="speakers__role">건국대학교</h4>
+              </hgroup>
+            </div>
+          </li>
+
+          <li class="speakers__card">
+            <div class="speakers__img-container">
+              <!-- <span class="speakers__decoration-img"></span> -->
+              <img class="speakers__img" src="../img/people/swk.png" alt="Speakers image">
+            </div>
+            <div class="speakers__info">
+              <hgroup>
+                <h3 class="speakers__name">김성우</h3>
+                <h4 class="speakers__role">서울대학교</h4>
+              </hgroup>
+            </div>
+          </li>
+
+          <li class="speakers__card">
+            <div class="speakers__img-container">
+              <!-- <span class="speakers__decoration-img"></span> -->
+              <img class="speakers__img" src="../img/people/dwl.jpeg" alt="Speakers image">
+            </div>
+            <div class="speakers__info">
+              <hgroup>
+                <h3 class="speakers__name">이덕우</h3>
+                <h4 class="speakers__role">계명대학교</h4>
+              </hgroup>
+            </div>
+          </li>
+
+          <li class="speakers__card">
+            <div class="speakers__img-container">
+              <!-- <span class="speakers__decoration-img"></span> -->
+              <img class="speakers__img" src="../img/people/wjh.png" alt="Speakers image">
+            </div>
+            <div class="speakers__info">
+              <hgroup>
+                <h3 class="speakers__name">황원준</h3>
+                <h4 class="speakers__role">아주대학교</h4>
+              </hgroup>
+            </div>
+          </li>
+
+          <li class="speakers__card">
+            <div class="speakers__img-container">
+              <!-- <span class="speakers__decoration-img"></span> -->
+              <img class="speakers__img" src="../img/people/swj.jpeg" alt="Speakers image">
+            </div>
+            <div class="speakers__info">
+              <hgroup>
+                <h3 class="speakers__name">정승원</h3>
+                <h4 class="speakers__role">고려대학교</h4>
+              </hgroup>
+            </div>
+          </li>
+
+
+
+          <li class="speakers__card">
+            <div class="speakers__img-container">
+              <!-- <span class="speakers__decoration-img"></span> -->
+              <img class="speakers__img" src="../img/people/jhl.jpeg" alt="Speakers image">
+            </div>
+            <div class="speakers__info">
+              <hgroup>
+                <h3 class="speakers__name">이종하</h3>
+                <h4 class="speakers__role">계명대학교</h4>
+              </hgroup>
+            </div>
+          </li>
+
+
+          <li class="speakers__card">
+            <div class="speakers__img-container">
+              <!-- <span class="speakers__decoration-img"></span> -->
+              <img class="speakers__img" src="../img/people/sjk.png" alt="Speakers image">
+            </div>
+            <div class="speakers__info">
+              <hgroup>
+                <h3 class="speakers__name">강석주</h3>
+                <h4 class="speakers__role">서강대학교</h4>
+              </hgroup>
+            </div>
+          </li>
+
+          <li class="speakers__card">
+            <div class="speakers__img-container">
+              <!-- <span class="speakers__decoration-img"></span> -->
+              <img class="speakers__img" src="../img/people/jtl.jpeg" alt="Speakers image">
+            </div>
+            <div class="speakers__info">
+              <hgroup>
+                <h3 class="speakers__name">이종택</h3>
+                <h4 class="speakers__role">경북대학교</h4>
+              </hgroup>
+            </div>
+          </li>
+
+          <li class="speakers__card">
+            <div class="speakers__img-container">
+              <!-- <span class="speakers__decoration-img"></span> -->
+              <img class="speakers__img" src="../img/people/shl.jpeg" alt="Speakers image">
+            </div>
+            <div class="speakers__info">
+              <hgroup>
+                <h3 class="speakers__name">임성훈</h3>
+                <h4 class="speakers__role">DGIST</h4>
+              </hgroup>
+            </div>
+          </li>
+
+          <li class="speakers__card">
+            <div class="speakers__img-container">
+              <!-- <span class="speakers__decoration-img"></span> -->
+              <img class="speakers__img" src="../img/people/srk.png" alt="Speakers image">
+            </div>
+            <div class="speakers__info">
+              <hgroup>
+                <h3 class="speakers__name">김승룡</h3>
+                <h4 class="speakers__role">고려대학교</h4>
+              </hgroup>
+            </div>
+          </li>
+
+
+        </ul>
+        <!-- <button class="speakers__btn" type="button">
+          MORE<span class="speakers__icon fas fa-chevron-down"></span>
+        </button> -->
+      </div>
+    </section>
+
+    <!-- <section class="logo">
+      <div class="logo__container">
+        <h3 class="logo__h3">FinTech Global Summit Logo</h3>
+        <div class="logo__decoration"></div>
+        <p class="logo__p">
+          The logo of FinTech Global Summit 2022 was decided thought the logo
+          competition from 8.June to 7.July.
+        </p>
+        <img class="logo__img" src="../img/fintech-logo-1.svg" alt="FinTech logo" />
+      </div>
+    </section> -->
+
+    <!-- Past Events -->
+
+    <!-- <section class="past-event">
+      <div class="past-event__container">
+        <h3 class="past-event__h3">See the past FinTech Global Summit</h3>
+        <span class="past-event__decoration"></span>
+        <p class="past-event__p">
+          Take a look at the last two FinTech which took place in Buenos Aires
+          and Berlin.
+        </p>
+        <div class="past-event__img-container">
+          <img class="past-event__img" src="../img/duotone-img1.png" alt="Past event 2020" />
+          <img class="past-event__img" src="../img/duotone-img2.png" alt="Past event 2021" />
+        </div>
+      </div>
+    </section> -->
+
+
+    <!-- Footer -->
+    <div style="border-top: 2px solid #e9e9e9;"></div>
+    <footer class="footer">
+      <div class="footer__container">
+        <!-- <img class="footer__img" src="../img/fintech-logo-1.svg" alt="FinTech logo" /> -->
+        <!-- <img class="footer__img--secondary" src="../img/fintech-logo-3.svg" alt="FinTech logo" /> -->
+        <p class="footer__p">
+          대한전자공학회 인공지능신호처리 소사이어티
+        </p>
+      </div>
+    </footer>
+</body>
+
+</html>
