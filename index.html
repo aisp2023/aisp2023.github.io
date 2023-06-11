@@ -17,6 +17,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
     rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
   <!-- Tittle -->
   <title>인공지능신호처리 학술대회</title>
@@ -29,6 +30,7 @@
   <script src="https://code.createjs.com/1.0.0/preloadjs.min.js"></script>
   <script src="index.js" defer></script>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
 
 </head>
@@ -112,7 +114,16 @@
   <main>
     <!-- Hero -->
 
-    <section class="hero">
+    <section class="swiper hero">
+      <div class="swiper-wrapper hero--slide">
+        <!-- <div class="swiper-slide slide-img" style="background-image: url('img/bod_1528419810491.png');"></div>
+        <div class="swiper-slide slide-img" style="background-image: url('img/bod_1528419792937.png');"></div>
+        <div class="swiper-slide slide-img" style="background-image: url('img/img1.png');"></div>
+        <div class="swiper-slide slide-img" style="background-image: url('img/img2.png');"></div> -->
+        <img class="swiper-slide slide-img" src="img/bod_1528419810491.png">
+        <img class="swiper-slide slide-img" src="img/img1.png">
+        <img class="swiper-slide slide-img" src="img/img2.png">
+      </div>
       <div class="hero--img">
         <div class="hero__container">
           <div class="hero__container-img"></div>
@@ -129,7 +140,7 @@
         </div>
 
       </div>
-      <script>
+      <!-- <script>
         //Array of images which you want to show: Use path you want.
         var images = new Array('img/bod_1528419810491.png', 'img/bod_1528419792937.png', 'img/img1.png', 'img/img2.png');
         var nextimage = 0;
@@ -158,8 +169,19 @@
               setTimeout(doSlideshow, 5000);
             });
         }
-      </script>
+      </script> -->
     </section>
+
+    <script>
+      var swiper = new Swiper(".hero", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: true,
+        },
+      });
+    </script>
 
     <!-- Main Program -->
 
