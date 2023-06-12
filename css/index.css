@@ -450,9 +450,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 90vw;
+  width: 100vw;
   background-color: #3b3e45;
   list-style: none;
+  /* margin-left: 2%;
+  margin-right: 2%; */
 }
 
 .program__img {
@@ -527,7 +529,7 @@ body {
     display: flex;
     flex-direction: column;
     max-width: 10vw;
-    height: 15vh;
+    height: 200px;
   }
 
   .program__img {
