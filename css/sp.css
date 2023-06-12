@@ -335,12 +335,18 @@ body {
   ========================================
 */
 
+.logo {
+  margin-left: 0%;
+  margin-right: 0%;
+}
+
 .logo__container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 2rem 1rem;
+  /* align-items: center;
+  justify-content: center; */
+  /* max-width: 60%; */
+  margin: 2rem 2rem;
 }
 
 .logo__h3 {
@@ -370,6 +376,10 @@ body {
 }
 
 @media screen and (min-width: 850px) {
+  .logo {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
   .logo__h3 {
     margin-top: 0.75rem;
   }
@@ -495,8 +505,8 @@ body {
 .speakers__container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
 }
 
 .speakers__btn {
@@ -519,8 +529,8 @@ body {
 
 .speakers__img-container {
   position: relative;
-  min-width: 7rem;
-  min-height: 7rem;
+  min-width: 9rem;
+  min-height: 9rem;
   margin-right: 1rem;
 }
 
@@ -536,16 +546,20 @@ body {
 
 .speakers__list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   margin-right: 4.75rem;
   margin-left: 4.75rem;
   padding-left: 0;
   list-style: none;
 }
 
+.lecture_title {
+  font-weight: bold;
+}
+
 .speakers__img {
   z-index: 2;
-  position: absolute;
+  /* position: absolute; */
   right: 0;
   bottom: 0;
   width: 87%;
@@ -562,7 +576,7 @@ body {
   margin-right: 1rem;
   color: #ee523c;
   font-size: small;
-  font-style: italic;
+  /* font-style: italic; */
 }
 
 .speakers__description {
@@ -593,9 +607,16 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-right: 3rem;
-    margin-left: 3rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
     padding-left: 0;
+  }
+
+  .speakers__card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.827em;
+    flex-direction: column;
   }
 }
 
