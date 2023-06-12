@@ -531,6 +531,8 @@ body {
   position: relative;
   min-width: 9rem;
   min-height: 9rem;
+  max-width: 9rem;
+  max-height: 9rem;
   margin-right: 1rem;
 }
 
