@@ -115,20 +115,32 @@
   <main>
     <!-- Hero -->
 
-    <section class="swiper hero">
+    <section class="swiper hero swiper-container">
       <div class="swiper-wrapper hero--slide">
         <!-- <div class="swiper-slide slide-img" style="background-image: url('img/bod_1528419810491.png');"></div>
-        <div class="swiper-slide slide-img" style="background-image: url('img/bod_1528419792937.png');"></div>
-        <div class="swiper-slide slide-img" style="background-image: url('img/img1.png');"></div>
-        <div class="swiper-slide slide-img" style="background-image: url('img/img2.png');"></div> -->
-        <img class="swiper-slide slide-img" src="img/bod_1528419810491.png">
-        <img class="swiper-slide slide-img" src="img/bod_1528419792937.png">
-        <img class="swiper-slide slide-img" src="img/img1.png">
-        <img class="swiper-slide slide-img" src="img/img2.png">
+          <div class="swiper-slide slide-img" style="background-image: url('img/bod_1528419792937.png');"></div>
+          <div class="swiper-slide slide-img" style="background-image: url('img/img1.png');"></div>
+          <div class="swiper-slide slide-img" style="background-image: url('img/img2.png');"></div> -->
+        <!-- <img class="swiper-slide slide-img" src="img/kmu/1.jpg">
+          <img class="swiper-slide slide-img" src="img/kmu/visual01.jpg">
+          <img class="swiper-slide slide-img" src="img/kmu/bod_1528419810491.jpg">
+          <img class="swiper-slide slide-img" src="img/kmu/5.jpg">
+          <img class="swiper-slide slide-img" src="img/kmu/temp_1614837081507100.jpg">
+          <img class="swiper-slide slide-img" src="img/kmu/visual03.jpg"> -->
+        <div class="swiper-slide slide-img" style="background-image:url(img/kmu/visual03.jpg)"></div>
+
+        <div class="swiper-slide slide-img" style="background-image:url(img/kmu/visual01.jpg)"></div>
+        <div class="swiper-slide slide-img" style="background-image:url(img/kmu/bod_1528419810491.jpg)"></div>
+        <div class="swiper-slide slide-img" style="background-image:url(img/kmu/5.jpg)"></div>
+        <div class="swiper-slide slide-img" style="background-image:url(img/kmu/temp_1614837081507100.jpg)"></div>
+        <div class="swiper-slide slide-img" style="background-image:url(img/kmu/1.jpg)"></div>
       </div>
+
+      <div class="hero__container-img"></div>
+
       <div class="hero--img">
         <div class="hero__container">
-          <div class="hero__container-img"></div>
+
           <hgroup class="hero__hgroup">
             <h3 class="hero__h4">대한전자공학회</h3>
             <h1 class="hero__h1">
@@ -149,6 +161,7 @@
 
     <script>
       var swiper = new Swiper(".hero", {
+        // autoHeight: true,
         spaceBetween: 30,
         centeredSlides: true,
         loop: true,

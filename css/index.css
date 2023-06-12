@@ -210,15 +210,25 @@ body {
   position: relative;
 }
 
+.swiper-container {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  /* margin-left: auto;
+  margin-right: auto; */
+}
+
 .hero--slide {
-  /* display: flex; */
-  z-index: -2;
   position: absolute;
-  /* overflow: hidden; */
+  /* display: flex; */
+  /* z-index: 0;
+  position: absolute;
   max-height: 300px;
   width: auto;
   align-items: center;
-  object-fit: cover;
+  object-fit: cover; */
+  background-size: cover;
+  background-position: center;
 }
 
 .hero--img {
@@ -238,10 +248,15 @@ body {
   /* display: flex; */
   /* z-index: -2; */
   /* position: relative; */
-  /* background-size: cover; */
-  /* background-position: 50% 40%; */
+  background-size: cover;
+  background-position: 50% 40%;
   /* max-width: 400px; */
   /* height: auto; */
+  /* object-fit: contain;
+  width: 120%;
+  height: 120%;
+  object-fit: cover;
+  object-position: center; */
 }
 
 @keyframes fadeIn {
@@ -276,8 +291,10 @@ body {
   left: 0;
   width: 100%;
   min-height: 100%;
-  background: linear-gradient(-10deg, white 75%, rgba(255, 255, 255, 0.75));
+  background: linear-gradient(-10deg, white 0%, rgba(255, 255, 255, 0.4));
   content: "";
+  z-index: 2;
+  position: absolute;
 }
 
 .hero__container {
@@ -322,14 +339,12 @@ body {
 }
 
 @media screen and (min-width: 850px) {
-  .hero--slide {
-    /* display: flex; */
-    z-index: -2;
-    position: absolute;
-    /* overflow: hidden; */
-    max-height: 600px;
-    width: auto;
-    align-items: center;
+  .swiper-container {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    /* margin-left: auto;
+    margin-right: auto; */
   }
   .hero--img {
     display: flex;

@@ -186,7 +186,13 @@ ul {
   justify-content: center;
   padding: 6rem 0.25rem;
   padding-bottom: 2.5rem;
-  background: url("../img/bod_1528419810491.png") 50% 40% no-repeat;
+  background-image: linear-gradient(
+      -10deg,
+      white 0.5%,
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("../img/kmu/5.jpg");
+  background-position: 50% 40%;
   background-size: cover;
 }
 
