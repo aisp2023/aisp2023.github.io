@@ -655,13 +655,16 @@ body {
 .horizontal__list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-right: 4.75rem;
-  margin-left: 4.75rem;
+  /* margin-right: 4.75rem; */
+  /* margin-left: 4.75rem; */
+  margin-right: auto;
+  margin-left: auto;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
   margin-bottom: 2rem;
+  width: 80%;
 }
 
 .map_img {
