@@ -182,11 +182,7 @@ body {
   justify-content: center;
   padding: 6rem 0.25rem;
   padding-bottom: 2.5rem;
-  background-image: linear-gradient(
-      -10deg,
-      white 0.5%,
-      rgba(255, 255, 255, 0.5)
-    ),
+  background-image: linear-gradient(-10deg, white 0%, rgba(255, 255, 255, 0.5)),
     url("../img/kmu/2.jpg");
   background-position: 50% 40%;
   background-size: cover;
