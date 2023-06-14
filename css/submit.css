@@ -279,6 +279,7 @@ ul {
   padding: 1.5rem 1.5rem;
   border: 2px solid black;
   font-size: small;
+  line-height: 20pt;
 }
 
 @media screen and (min-width: 850px) {
@@ -692,7 +693,7 @@ ul {
 
 .horizontal__list {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   margin-right: 4.75rem;
   margin-left: 4.75rem;
   margin-top: 0;
@@ -736,4 +737,17 @@ ul {
     max-width: 90%;
     height: auto;
   }
+}
+
+.poster__img {
+  min-width: 200px;
+  max-width: 60%;
+}
+
+.poster__container {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
 }
