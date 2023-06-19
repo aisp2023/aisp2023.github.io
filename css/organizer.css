@@ -59,54 +59,54 @@ body {
 }
 @media screen and (max-width:950px) {
 	.nav-top,.nav__container {
-		display:none;
+			display:none;
 	}
 }
 @media screen and (min-width:950px) {
 	.nav__mobile-menu {
-		display:none;
+			display:none;
 	}
 	.nav__btn-icon {
-		display: none;
+			display:none;
 	}
 	.nav-top {
-		margin-top:0;
-		background-color:#ee523c;
+			margin-top:0;
+			background-color:#ee523c;
 	}
 	.nav-top__ul {
-		display:flex;
-		justify-content:flex-end;
-		margin:0;
-		margin-right:5rem;
-		padding:0.07rem 0;
-		gap:1.5rem;
+			display:flex;
+			justify-content:flex-end;
+			margin:0;
+			margin-right:5rem;
+			padding:0.07rem 0;
+			gap:1.5rem;
 	}
 	.nav__container {
-		display:flex;
-		align-items:center;
-		justify-content:space-between;
+			display:flex;
+			align-items:center;
+			justify-content:space-between;
 	}
 	.nav__container>a {
-		text-decoration:none;
-		width:auto;
-		margin-top:1rem;
-		margin-right:1rem;
-		margin-bottom:1rem;
-		margin-left:5rem;
+			text-decoration:none;
+			width:auto;
+			margin-top:1rem;
+			margin-right:1rem;
+			margin-bottom:1rem;
+			margin-left:5rem;
 	}
 	.nav__ul {
-		display:flex;
-		align-items:center;
-		margin-right:5rem;
-		margin-left:5rem;
-		gap:2rem;
+			display:flex;
+			align-items:center;
+			margin-right:5rem;
+			margin-left:5rem;
+			gap:2rem;
 	}
 	.nav__a {
-		color:#3b3e45;
-		text-decoration:none;
-		white-space:nowrap;
-		font-size:large;
-		font-weight:bold;
+			color:#3b3e45;
+			text-decoration:none;
+			white-space:nowrap;
+			font-size:large;
+			font-weight: bold;
 	}
 }
 /* ======================================== Hero ========================================*/
@@ -161,11 +161,11 @@ body {
 }
 @media screen and (min-width:950px) {
 	.hero__h1 {
-		margin-top:0.25rem;
-		margin-bottom:1.5rem;
-		color:rgb(238,82,60);
-		font-size:3.5rem;
-		line-height:3.5rem;
+			margin-top:0.25rem;
+			margin-bottom:1.5rem;
+			color:rgb(238,82,60);
+			font-size:3.5rem;
+			line-height: 3.5rem;
 	}
 }
 /* ======================================== Committee ========================================*/
@@ -217,13 +217,13 @@ body {
 }
 @media screen and (max-width:950px) {
 	.committee__list {
-		display:flex;
-		flex-direction:column;
-		align-items:center;
-		justify-content:center;
-		margin-right:3rem;
-		margin-left:3rem;
-		padding-left:0;
+			display:flex;
+			flex-direction:column;
+			align-items:center;
+			justify-content:center;
+			margin-right:3rem;
+			margin-left:3rem;
+			padding-left: 0;
 	}
 }
 /* ======================================== Footer ========================================*/
@@ -255,13 +255,13 @@ body {
 .footer__p {
 	font-size:12px;
 	display:block;
-	margin: 0 0 0 0;
+	margin:0 0 0 0;
 }
 br.break-t {
-  display: none;
+	display:none;
 }
 @media screen and (max-width:850px) {
-  br.break-t {
-    display:inline;
-  }
+	br.break-t {
+		display: inline;
+	}
 }
