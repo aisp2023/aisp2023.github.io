@@ -436,7 +436,6 @@ body {
 	gap: 1.5rem;
 }
 .partners__img {
-	/* max-height:1.75rem;*/
 	max-height:3.75rem;
 	margin:0 auto;
 	margin-top:1.5rem;
@@ -466,7 +465,6 @@ body {
 	display:block;
 	position:relative;
 	line-height:1.5;
-	/* flex-wrap:wrap;*/
 	align-items:center;
 	justify-content:center;
 	margin:10px 0 10px 0;
@@ -483,11 +481,13 @@ body {
 .footer__copyright {
 	margin:10px 0 10px 0;
 	text-align:center;
+  font-size: 10px;
 }
 .footer__divline {
 	margin:0 7px;
 }
 .footer__p {
+  font-size: 12px;
 	display:block;
 	margin: 0 0 0 0;
 }
