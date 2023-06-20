@@ -238,6 +238,15 @@ body {
 				margin-top: 0.75rem;
 	}
 }
+@media screen and (max-width:850px) {
+	.program_tb th {
+		height:60px;
+		font-size:medium;
+	}
+	.program_tb td {
+		font-size: small;
+	}
+}
 /* ======================================== Footer ========================================*/
 .footer__container {
 	display:block;
