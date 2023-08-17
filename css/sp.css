@@ -190,10 +190,11 @@ body {
   height: 0.15rem;
   background: #ee523c;
 }
-@media screen and (min-width: 1550px) {
+@media screen and (min-width: 1000px) {
   .logo {
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
   }
   .logo__h3 {
     margin-top: 0.75rem;
