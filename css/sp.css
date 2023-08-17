@@ -203,7 +203,7 @@ body {
 /* ======================================== Speakers ========================================*/
 .speakers__card {
   display: flex;
-  align-items: center;
+  /*align-items: center;*/
   margin-bottom: 2.827em;
 }
 .speakers__img-container {
